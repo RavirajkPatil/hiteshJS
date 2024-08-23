@@ -1,4 +1,4 @@
-// singletop
+// singleton
 //Object.create()
 
 // Object literals
