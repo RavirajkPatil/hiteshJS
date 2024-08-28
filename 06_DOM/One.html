@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Document</title>
+    <style>
+        .black-div{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class="black-div">
+    <div>
+        <h2 id="title" class="heading">DOM One Page <span style="display: none;"> Test DOM</span></h2>
+        <p> This is my one page for DOM document</p>
+        <p class="para"> This is my one page for DOM document</p>
+        <p> This is my one page for DOM document</p>
+        <input type="password" placeholder="type password"/>
+        <ul>
+            <li class="field-item">One</li>
+            <li class="field-item">Two</li>
+            <li class="field-item">Three</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!-- 
+// Open new tab browser operation on browser:
+console.log(document)               // get all functions of page
+console.log(document.links)         // get all links on current page
+console.log(document.links[3])      // get 3rd link from page
+document.getElementsByClassName('heading')  // get class with all htmlCollection
+document.getElementById('firstHeading') // to get exact element from page
+document.getElementById('firstHeading').innerHTML = "<h1>Raviraj Patil</h1>"    // to change html content in page
+--------------------------------------
+document.getElementById('title')    // output : <h2 id="title" class="heading">DOM One Page</h2>
+document.getElementById('title').id // 'title'
+document.getElementById('title').className  // 'heading'
+document.getElementById('title').getAttribute('class')  // 'heading'
+document.getElementById('title').setAttribute('class','test heading') // <h2 id="title" class="test heading">DOM One Page</h2>
+
+----------------
+let title = document.getElementById('title')    assign in variable,
+
+title.style.backgroundColor = 'green'
+title.style.padding = '15px'
+title.style.borderRadius = '10px'
+---------
+eg: <h2 id="title" class="heading">DOM One Page <span style="display: none;"> Test DOM</span></h2>
+
+title.innerText:    // 'DOM One Page'
+title.textContent:  // 'DOM One Page  Test DOM'
+title.innerHTML:    // 'DOM One Page <span style="display: none;"> Test DOM</span>'
+------------------
+querySelector:
+
+document.querySelector('p') // <p> This is my one page for DOM document</p>
+document.querySelector('#title')    // select with id
+document.querySelector('.heading')  // select with class name
+document.querySelector('input[type="password"]')    //  <input type="password" placeholder="type password"/>
+
+document.querySelector('ul')    // to select whole ul tag
+
+let ul = document.querySelector('ul')
+ul.querySelector('li')  // to select first li
+let li = ul.querySelector('li')
+li.style.backgroundColor="Red"
+
+------------
+querySelectorAll : To select all li's
+
+ul.querySelectorAll('li')   // NodeList(3) [li, li, li] = nodelist is not pure Array
+let tempList = ul.querySelectorAll('li') 
+tempList[0].style.color = "green"   // in querySelectorAll we have to mention by array'th index.
+
+let myH1 = document.querySelectorAll('p')   // NodeList(3) [p, p.para, p]
+myH1[2].style.backgroundColor="Grey"
+
+tempList.forEach( function (l) {        // mostly we use forEach loop
+    l.style.backgroundColor = "green"
+})
+------------------------------------
+
+let tempClassList = document.getElementsByClassName('field-item')   // HTMLCollection(3) [li.field-item, li.field-item, li.field-item]
+
+let convertedArray = Array.from(tempClassList)  // (3) [li.field-item, li.field-item, li.field-item]
+convertedArray.forEach( (l)=>{
+    l.style.backgroundColor = "green"
+})
+---------------
+from wikipedia
+
+let myH2 = document.querySelectorAll('h2')
+myH2.forEach( (h) => {
+    h.style.color = "green"
+    h.style.backgroundColor = "RED"
+    h.style.padding = "15px"
+    h.innerText = "Riddhesh"
+})
+-->
