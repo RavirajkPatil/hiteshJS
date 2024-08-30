@@ -1,3 +1,8 @@
+Javascript:
+    JS has default behaviour is Synchronous(We have to made forcefully asynchronous)
+    JS is single threaded.
+    It excute after step by step after old one method is completed then next method start.
+
 There are main 2 types of execution in JS.
 1. Global execution context
 2. Function execution context

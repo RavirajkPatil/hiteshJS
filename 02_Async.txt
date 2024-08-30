@@ -1,0 +1,8 @@
+JS has two type of code,
+Blocking code:
+        Block the flow of program.
+        Read file sync. // (mostly used in React/Node)
+Non-Blocking code:
+        Does not block execution.
+        Read file Async.
+
