@@ -70,5 +70,6 @@ for(let [key,value] of Object.entries(Rider)){
         console.log(`${key} : ${value}`);   
     }
 }
+//console.log(Rider.orderChai())
 
 
