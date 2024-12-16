@@ -1,0 +1,42 @@
+<head>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>  -->
+    <script>
+        /*$(function() {
+            //$('#txt').css('background-color','green');
+            $('#btn').click(function() {
+                alert("Button is hide");    
+                $(this.hide());
+            });
+            
+        });*/
+        var js = $.noConflict();
+        js(function(){
+            js('#txt').mouseover(function(){
+                js(this).css('background-color','green');
+            })
+            .mouseleave(function() {
+                js(this).css('background-color','grey');
+            });
+        });
+    </script>
+</head>
+<body>
+<input type="button" value="Click me" id="btn">
+<input type="text" placeholder="name here.." id="txt">
+</body>
+ <script>
+//  var handle = document.getElementById("btn")
+//     handle.style.backgroundColor="red"
+//     handle.addEventListener("click",clickHandler)
+//     function clickHandler(){
+//         alert("Handler active")
+//     }
+
+    $('#btn').click(function() {
+        // $(this).addClass('btn1')
+        //$(this).removeClass('btn2')
+        $(this).toggleClass('btn2')
+    })
+
+</script> 
+
