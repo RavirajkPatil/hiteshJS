@@ -1,4 +1,4 @@
-// 2] for in : It is working for object and others also
+// 2] for IN : It is working for object and others also
 
 let myObject = {
     js : "JavaScript",

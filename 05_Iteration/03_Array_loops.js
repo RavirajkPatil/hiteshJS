@@ -1,4 +1,4 @@
-// 1] for of : 
+// 1] for OF : 
 // syntax : [{},{},{}]
 //            ["","",""]
 
@@ -32,7 +32,7 @@ for (const [key,value] of map) {
         // BR :-  Brazil
 
 //-----------------------
-let myObject = {        // for of not working for object
+let myObject = {        // for OF not working for object
     'game1':'BGMI',     // game1:'BGMI',
     'game2':'spiderman' // game2:'spiderman'
 }

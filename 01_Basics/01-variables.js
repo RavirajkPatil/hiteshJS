@@ -4,6 +4,7 @@ let custName = "Raviraj"
 custLastName = "Patil"
 let custState  // Most use in js now 'let'
 
+// CustomerId = 987     Assignment to constant variable.: won't change const value.
 console.log(CustomerId);
 console.table([custEmail,custName,custLastName,custState])
 

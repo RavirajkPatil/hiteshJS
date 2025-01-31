@@ -22,7 +22,7 @@
         Array, Object, Functions.
 */
 
-    const heros = ["Ravi","Ridu","Shambhu"]     //object
+    const heros = ["Ravi","Ridu","Shambhu"]     //Array
 
     let myObj = {       //object
         name: "hitesh",

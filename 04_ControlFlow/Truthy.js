@@ -40,5 +40,5 @@ if (Object.keys(emptyObj).length === 0) {
  // condition ? true : false
 
  const bal = 50
- bal >= 80 ? console.log("Less than 80") : console.log("Greater than 80")
+ bal >= 80 ? console.log("Greater than 80") : console.log("Less than 80")
  
