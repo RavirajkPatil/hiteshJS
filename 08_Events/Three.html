@@ -7,23 +7,39 @@
 <body>
     <h2>Chai aur code</h2>
     <button id="Startbtn">Start</button>
-    <button id="Stopbtn">Start</button>
+    <button id="Stopbtn">Stop</button>
 </body>
 <script>
-    // setInterval(function(){
-    //     console.log("raviraj",Date.now());
-    // },2000)
+    let start = document.querySelector('#Startbtn')
+    let stop = document.querySelector('#Stopbtn')
+    let inte;
+    function SayHi(){
+        console.log("Raviraj",Date.now())
+    }
+    start.addEventListener('click',function() {
+        inte = setInterval(SayHi,2000,"Ridu")
+    })
+
+    stop.addEventListener('click',function(){
+        clearInterval(inte)
+    })
+/*
+    setInterval(function(){
+        console.log("raviraj",Date.now());
+    },2000)
 
     // let sayHi = function(){
     //     console.log("Raviraj",Date.now());
     // }
     // setInterval(sayHi,2000)
-
+*/    
+/*
     let sayHi = function(str){
         console.log(str,Date.now());
     }
     let intervalID = setInterval(sayHi,2000,"Ridu")
     
     //clearInterval(intervalID)
+*/
 </script>
 </html>

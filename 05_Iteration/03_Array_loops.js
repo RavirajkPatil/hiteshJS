@@ -4,7 +4,7 @@
 
 let myArray = [1,2,3,4,5,6]
 for (const arr of myArray) {
-    //console.log(arr);
+    console.log(arr);
 }
 //----------------------
 let greetings = "Hello world!"
@@ -14,7 +14,9 @@ for (const greet of greetings) {
     //console.log(`char is ${greet}`)
 }
 //------------------------
-// Maps: it is a object holds key-value pair
+
+/* ----- Map: it is a object holds key-value pair   ---------*/
+
 //       It gives unique value (avoid duplicate)
 const map = new Map()
 map.set('IN', 'India')
@@ -32,6 +34,7 @@ for (const [key,value] of map) {
         // BR :-  Brazil
 
 //-----------------------
+/*
 let myObject = {        // for OF not working for object
     'game1':'BGMI',     // game1:'BGMI',
     'game2':'spiderman' // game2:'spiderman'
@@ -39,3 +42,4 @@ let myObject = {        // for OF not working for object
 for (const [key,value] of myObject) {
     //console.log(key,':- ',value);
 }
+    */

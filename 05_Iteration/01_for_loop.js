@@ -13,12 +13,12 @@ for (let i = 0; i <= 10; i++) {         // for change multiple lines: press Ctrl
     console.log(element);
 }
 */
-//-------------------- Nested for loop
+//-------------------- Nested for loop -------------------------
 /*
 for (let i = 1; i <= 10; i++) {
     console.log(`Outer loop value : ${i}`);
     for (let j = 1; j <= 10; j++) {
-        //console.log(`Inner lop value : ${j} and inner loop value : ${i}`); 
+        //console.log(`Inner loop value : ${j} and outer loop value : ${i}`); 
         console.log(i+" * "+j+" = "+i*j)    // multiplication tables
     }
 }

@@ -5,7 +5,7 @@ const promiseOne = new Promise(function (resolve, reject) {
 
 setTimeout(() => {
     console.log("Async task is completed");
-    resolve()   // witout resolve only get output: Async task is completed.
+    resolve()   // without resolve only get output: Async task is completed.
     }, 1000);
 })
 
@@ -13,8 +13,9 @@ promiseOne.then(function(){
     console.log("Promise consumed");
     
 })
-
+*/
 //---------
+/*
 // Without creation variable
  new Promise(function(resolve,reject){
     setTimeout(function(){
@@ -67,7 +68,7 @@ promiseFour.then((user)=>{
 /*
 let promiseFive = new Promise(function (resolve,reject) {
     setTimeout(function() {
-        let result =true // Error: JS went wrong
+        let result =false // Error: JS went wrong
         //let result =false   // { username: 'Javascript', password: 'password' }
         if (!result) {
             resolve({username:"Javascript",password:"password"})
@@ -103,6 +104,7 @@ async function getAllUsers(){
 }
 getAllUsers()
 */
+/*
 const fetch = require("node-fetch");
 fetch('https://api.github.com/users/hiteshchoudhary')
 .then((response) => {
@@ -112,3 +114,4 @@ fetch('https://api.github.com/users/hiteshchoudhary')
     console.log(data);
 })
 .catch((error) => console.log(error))
+*/
